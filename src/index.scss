@@ -1,0 +1,215 @@
+$shadow: #aaaaaa;
+$texts: #616161;
+$white: #ffffff;
+$black: #000000;
+
+html {
+  scroll-behavior: smooth;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* navbar */
+#navbar_list {
+  margin: 0;
+}
+
+#navbar-main {
+  position: fixed !important;
+  width: 90%;
+  z-index: 999;
+}
+
+.resume-btn {
+  text-decoration: none;
+  color: $white;
+}
+
+.resume-btn:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+/* main header */
+#main_header {
+  height: 100vh;
+  background-image: linear-gradient(#272727d9, rgba(39, 39, 39, 0.85)),
+    url(img/blue.jpg);
+}
+
+#header_container {
+  padding-top: 15%;
+  color: $white;
+  h1 {
+    font-size: 80px;
+  }
+  h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #main_header h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+
+  #main_header h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #main_header h1 {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+
+  #main_header h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+}
+
+/* main skills */
+#main_skills {
+  padding-top: 70px;
+  h1 {
+    transition: transform 0.2s;
+  }
+}
+
+#main_skills h1:hover {
+  transform: scale(1.1);
+}
+#main_skills img {
+  padding: 10px;
+  transition: transform 0.1s; /* Animation */
+  margin: 0 auto;
+}
+#main_skills img:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 500px) {
+  #main_skills img {
+    width: 200px;
+  }
+}
+
+/* main projects */
+
+#main_projects {
+  padding-top: 70px;
+  h1 {
+    background-color: $black;
+    box-shadow: 4px 5px 5px $shadow;
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .card {
+    transition: transform 0.7s;
+  }
+}
+
+#main_projects .card:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 5px 5px $shadow;
+}
+@media only screen and (max-width: 1024px) {
+  #main_projects .card:hover {
+    box-shadow: 1px 2px 2px $shadow;
+  }
+}
+/* main about me */
+#main_about {
+  color: $black !important;
+  padding-top: 70px;
+  h1 {
+    background-color: $black;
+    color: $white;
+    box-shadow: 4px 5px 5px $shadow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container.pt-5 {
+  margin-top: 5px;
+  font-size: 30px;
+  color: $texts;
+}
+@media only screen and (max-width: 500px) {
+  #main_about img {
+    width: 200px;
+  }
+}
+
+/* main contact */
+#main_contact {
+  padding-top: 70px;
+  h1 {
+    background-color: $black;
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn-send {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 316px) {
+  .btn-send {
+    font-size: 5px !important;
+  }
+}
+
+/* footer */
+#main_contact .text-center {
+  box-shadow: 4px 5px 5px $shadow;
+}
+#main_contact .card {
+  box-shadow: 4px 5px 5px $shadow;
+}
+footer {
+  padding-bottom: 10px;
+  color: $black;
+}
+.form-group {
+  color: #767676;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+/* card images */
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px;
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
+
+/* Card Styles */
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px 8px 0px 0;
+}
